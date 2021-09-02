@@ -32,7 +32,9 @@ defmodule DepsDowngrade.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
       {:gradualixir,
-       github: "overminddl1/gradualixir", ref: "master", only: [:dev], runtime: false}
+       github: "overminddl1/gradualixir", ref: "master", only: [:dev], runtime: false},
+       {:amqp, "~> 1.0"},
+       {:jason, "~> 1.0"}
     ]
   end
 end
