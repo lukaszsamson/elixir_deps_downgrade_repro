@@ -21,20 +21,8 @@ defmodule DepsDowngrade.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:mock, "~> 0.3", only: :test},
-      {:recon, "~> 2.3"},
       {:phoenix, "~> 1.5.0"},
-      {:phoenix_pubsub, "~> 2.0"},
-      {:phoenix_html, "~> 2.10"},
-      {:phoenix_live_reload, "~> 1.0", only: :dev},
-      {:gettext, "~> 0.11"},
-      {:plug, "~> 1.7"},
-      {:plug_cowboy, "~> 2.0"},
-      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
-      {:gradualixir,
-       github: "overminddl1/gradualixir", ref: "master", only: [:dev], runtime: false},
-       {:amqp, "~> 1.0"},
-       {:jason, "~> 1.0"}
+      {:plug_cowboy, "~> 2.0"}
     ]
   end
 end
